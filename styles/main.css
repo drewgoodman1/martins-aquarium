@@ -1,0 +1,51 @@
+.mainDiv {
+    display: flex;
+
+}
+
+.fishList {
+    display: flex;
+    padding: 2px 16px;
+    border: 1px dotted crimson;
+    
+}
+
+.fish_card {
+
+    margin: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border: 1px dotted blue;
+  }
+
+  .allQuotes {
+    display: flex;
+    padding: 2px 16px;
+    border: 1px dotted green;
+  }
+
+  .quoteCard{
+    margin: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border: 1px dotted purple;
+  }
+
+  .allLocations {
+    display: flex;
+    padding: 2px 16px;
+    border: 1px dotted gray;
+  }
+
+  .locationCard {
+    margin: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border: 1px dotted blue;
+  }
+
+  .allTips {
+    display: flex;
+    padding: 2px 16px;
+    border: 1px dotted rgb(20, 187, 220);
+  }
