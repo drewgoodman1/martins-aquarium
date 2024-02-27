@@ -1,7 +1,7 @@
 
 
 // Import the functions from the correct module
-import { FishList, mostHolyFish, soldierFish, nonHolyFish } from "./fish/FishList.js"
+import { FishList/* ,mostHolyFish,soldierFish, nonHolyFish */} from "./fish/FishList.js"
 import { TipList } from "./tips/TipList.js"
 import { LocationList } from "./locations/LocationList.js"
 
@@ -24,6 +24,7 @@ const parentHTMLElement3 = document.querySelector(".allTips")
 
 parentHTMLElement.innerHTML = (FishList() + LocationList())
 parentHTMLElement3.innerHTML = TipList()
+
 
 
 

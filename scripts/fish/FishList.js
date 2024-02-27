@@ -1,16 +1,24 @@
 // Import the function that returns a copy of the fish array
 import { getFish } from "../database.js"
 
+const fishes = getFish()
+let greatFishes = []
 
 export const FishList = () => {
     // Invoke the function that you imported from the database module
-    const fishes = getFish()
+    //const fishes = getFish()
+ 
+    mostHolyFish(fishes)
+    soldierFish(fishes)
+    nonHolyFish(fishes)
+    //console.log(greatFishes)
+    
 
     // Start building a string filled with HTML syntax
     let htmlString = '<article class="fishList">'
 
     // Create HTML representations of each fish here
-    for (const fish of fishes) {
+    for (const fish of greatFishes) {
 
         // Why is there a backtick used for this string?
         htmlString += `<section class="fish_card">
@@ -28,47 +36,43 @@ export const FishList = () => {
     return htmlString
 }
 
-export const mostHolyFish = () => {
-    // 3, 6, 9, 12, etc... fish
-    const fishes = getFish()
-    const holyFish = []
-    //if fish length is multiple of 3 push to holyFish array
-    for (const fish of fishes) {       
-            if(fish.length %3 === 0){
-            holyFish.push(fish)
+const mostHolyFish = (allFish) => {
+    //use for loop to remove fish from allFish if holy 
+    for(let i=0; i < allFish.length; i++){
+        if(allFish[i].length %3 === 0){
+            greatFishes.push(allFish[i])
+            console.log(allFish[i].name + i)
+            //this reduces the length of the array
+            //decrementing i makes sure the element at the end is not missed when loop iterates
+            allFish.splice(i,1)
+            i--
+            console.log(`${allFish[i+1].name} removed`)
             }
-    }
-    //console.log(holyFish)
-    return holyFish
+     
+        }
 }
 
-export const soldierFish = () => {
-    // 5, 10, 15, 20, 25, etc... fish
-    const fishes = getFish()
-    const soldierFish = []
-    //if fish length is multiple of 3 push to holyFish array
-    for (const fish of fishes) {       
+
+const soldierFish = (allFish) => {
+    //if fish length is multiple of 5 push to greatFish array
+    for (const fish of allFish) {       
             if(fish.length %5 === 0){
-            soldierFish.push(fish)
+            greatFishes.push(fish)
             }
     }
     //console.log(soldierFish)
-    return soldierFish    
+    //return soldierFish    
 }
 
-export const nonHolyFish = () => {
+const nonHolyFish = (allFish) => {
     // Any fish not a multiple of 3 or 5
-    const fishes = getFish()
-    const regularFish = []
-    //if fish length is multiple of 3 push to holyFish array
     for (const fish of fishes) {       
-            if(fish.length %5 !== 0 && fish.length %3 !==0){
-            regularFish.push(fish)
+        if(fish.length %5 !== 0 && fish.length %3 !==0){
+            greatFishes.push(fish)
             }
     }
-    //console.log(regularFish)
-    return regularFish
 }
+
 
 
 

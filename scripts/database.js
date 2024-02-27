@@ -81,17 +81,20 @@ const database = {
         {
             locationID: 1,
             locationName: "Tokyo",
-            locationPhoto: "https://media.istockphoto.com/id/1345059895/photo/alley-of-memories.jpg?s=612x612&w=0&k=20&c=5BTlBgn6FothoJrDLLWBjRAlVA8vRlhhGOj2TnC4oCA="
+            locationPhoto: "https://media.istockphoto.com/id/1345059895/photo/alley-of-memories.jpg?s=612x612&w=0&k=20&c=5BTlBgn6FothoJrDLLWBjRAlVA8vRlhhGOj2TnC4oCA=",
+            fishHarvested: ["Nemo", "Goldie", "Sushi"]
         },
         {
             locationID: 2,
             locationName: "Australia",
-            locationPhoto: "https://media.istockphoto.com/id/1368846553/photo/d-syd-kir-circ-quay-ferry.jpg?s=612x612&w=is&k=20&c=8ZQJel5-jEkyQkk58w-qHM1AG-MZJRM1g4XvPOCLDJo="
+            locationPhoto: "https://media.istockphoto.com/id/1368846553/photo/d-syd-kir-circ-quay-ferry.jpg?s=612x612&w=is&k=20&c=8ZQJel5-jEkyQkk58w-qHM1AG-MZJRM1g4XvPOCLDJo=",
+            fishHarvested: ["Marlin", "Dori"]
         },
         {
             locationID: 3,
             locationName: "Waikiki",
-            locationPhoto: "https://media.istockphoto.com/id/1371880849/photo/hawaii-beach-honolulu-city-travel-landscape-of-waikiki-beach-and-diamond-head-mountain-peak.jpg?s=612x612&w=0&k=20&c=z-IZVBnGdVzjIYdgnuiVPIoWCNAKLuDrXbnxuirYXPY="
+            locationPhoto: "https://media.istockphoto.com/id/1371880849/photo/hawaii-beach-honolulu-city-travel-landscape-of-waikiki-beach-and-diamond-head-mountain-peak.jpg?s=612x612&w=0&k=20&c=z-IZVBnGdVzjIYdgnuiVPIoWCNAKLuDrXbnxuirYXPY=",
+            fishHarvested: ["Bart"]
         }
     ]
 }
