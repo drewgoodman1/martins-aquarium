@@ -47,8 +47,7 @@ const mostHolyFish = (allFish) => {
             allFish.splice(i,1)
             i--
             console.log(`${allFish[i+1].name} removed`)
-            }
-     
+            }     
         }
 }
 
@@ -59,9 +58,7 @@ const soldierFish = (allFish) => {
             if(fish.length %5 === 0){
             greatFishes.push(fish)
             }
-    }
-    //console.log(soldierFish)
-    //return soldierFish    
+    } 
 }
 
 const nonHolyFish = (allFish) => {
