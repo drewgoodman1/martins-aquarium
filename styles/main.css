@@ -5,12 +5,31 @@
 
 .fishList {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding: 2px 16px;
     border: 1px dotted crimson;
     
 }
 
 .fish_card {
+
+    margin: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border: 1px dotted blue;
+  }
+
+  .locationList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2px 16px;
+    border: 1px dotted crimson;
+
+  }
+
+  .location_card {
 
     margin: 0.5em;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
